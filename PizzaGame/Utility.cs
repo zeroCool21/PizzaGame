@@ -16,10 +16,10 @@ namespace PizzaGame
          */
         public enum OperazioniGioco
         {
-            Continua,               // 0
-            VittoriaAvversario,     // 1
-            Rigioca,                // 2
-            VittoriaGiocante        // 3
+            Continua,                       // 0
+            VittoriaAvversario,             // 1
+            Rigioca,                        // 2
+            PizzaAvvelenataMangiata         // 3
         }
 
         public static int GeneraNumeroPizzeDaImpilare(int low, int up)

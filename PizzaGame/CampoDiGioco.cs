@@ -65,7 +65,7 @@ namespace PizzaGame
             switch (RegoleGioco.SaltaTurno(p1, p2, PilaPizze))
             {
                 case Utility.OperazioniGioco.VittoriaAvversario: FineGioco = true; return 1;
-                case Utility.OperazioniGioco.VittoriaGiocante: FineGioco = true; return 1;
+                case Utility.OperazioniGioco.PizzaAvvelenataMangiata: FineGioco = true; return 1;
                 case Utility.OperazioniGioco.Rigioca: Go(p1, p2); break;
                 //case Utility.OperazioniGioco.Continua: // non faccio niente, continuo il flusso
             }

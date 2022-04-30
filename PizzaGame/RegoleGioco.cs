@@ -61,7 +61,7 @@ namespace PizzaGame
              * 0 = non salto il turno, false
              * 1 = salto il turno, avversario vince
              * 2 = rigioco, numero pizze da mangiare = all'avversario
-             * 3 = fine, ha vinto il giocante
+             * 3 = fine, il giocante ha perso perchè ha mangiato la pizza avvelenata 
              */
 
             // 1- pizze da mangiare giocante > pizze rimaste e pizze da mangiare giocante != pizze mangiate avversario
@@ -88,9 +88,9 @@ namespace PizzaGame
             // caso 3
             if (playerGiocante.PizzeMangiateNellaMano == pilaPizze.Count && playerGiocante.PizzeMangiateNellaMano != playerAvversario.PizzeMangiateNellaMano)
             {
-                Console.WriteLine($"Complimenti {playerGiocante.NomePlayer} ha vinto, {playerAvversario.NomePlayer} ha perso!!");
+                Console.WriteLine($"{playerGiocante.NomePlayer} ha mangiato la pizza avvelenata e perde, {playerAvversario.NomePlayer} ha vinto, Complimenti!!");
 
-                return Utility.OperazioniGioco.VittoriaGiocante;
+                return Utility.OperazioniGioco.PizzaAvvelenataMangiata;
             }
 
             return Utility.OperazioniGioco.Continua;
