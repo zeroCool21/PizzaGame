@@ -3,7 +3,7 @@
 using PizzaGame;
 using System.Text.RegularExpressions;
 
-//args = new string[] { "15", "50" };
+//args = new string[] { "12", "24" };
 
 if (args == null || args.Length == 0)
 {
