@@ -57,7 +57,7 @@ namespace PizzaGame
         #region Azioni
         public void GetScore()
         {
-            Console.WriteLine($"Pizze mangiate: <{Player1.NomePlayer} = {Player1.PizzeMangiate}> - <{Player2.NomePlayer} = {Player2.PizzeMangiate}>");
+            Utility.ConsoleColorText($"Pizze mangiate: <{Player1.NomePlayer} = {Player1.PizzeMangiate}> - <{Player2.NomePlayer} = {Player2.PizzeMangiate}>", ConsoleColor.Cyan);
         }
 
         private int RegoleTurno(Player p1, Player p2)

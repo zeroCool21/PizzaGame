@@ -1,13 +1,13 @@
-﻿// See https://aka.ms/new-console-template for more information
+﻿// See https://aka.ms/new-CConsole-template for more information
 
 using PizzaGame;
 using System.Text.RegularExpressions;
 
-//args = new string[] { "12", "24" };
+args = new string[] { "12", "24" };
 
 if (args == null || args.Length == 0)
 {
-    Console.WriteLine("args is null"); // Check for null array
+    Utility.ConsoleColorText($"args is null:yellow", ConsoleColor.Magenta); // Check for null array
 }
 else
 {
@@ -38,17 +38,17 @@ else
                 player1 = player2;
                 player2 = tmp;
 
-                Console.WriteLine("----------------------------------------------");
+                Console.WriteLine($"----------------------------------------------");
             }
         }
         else
         {
-            Console.WriteLine("Input array args invalid");
+            Utility.ConsoleColorText($"Input array args invalid", ConsoleColor.Magenta);
         }
     }
     catch (Exception ex)
     {
-        Console.WriteLine(ex.Message);
-        Console.WriteLine("Errore imprevisto!!!");
+        Utility.ConsoleColorText("Errore imprevisto!!!", ConsoleColor.Magenta);
+        Utility.ConsoleColorText(ex.Message, ConsoleColor.Magenta);
     }
 }

@@ -52,7 +52,7 @@ namespace PizzaGame
         public static int NumeroDiPizzeRimaste(Stack<string> PilaPizze)
         {
             var pizze = PilaPizze.Count;
-            Console.WriteLine($"Pizze rimaste: {pizze}\n");
+            Utility.ConsoleColorText($"Pizze rimaste: {pizze}\n", ConsoleColor.Cyan);
             return pizze;
         }
 
@@ -60,7 +60,7 @@ namespace PizzaGame
         {
             //la prima pizza inserita è quella generata
             var numPizze = GeneraNumeroPizzeDaImpilare(numMinPizze, numMaxPizze);
-            Console.WriteLine($"Sono state generate \"{numPizze}\" pizze, inizio ad impilarle\n");
+            Utility.ConsoleColorText($"Sono state generate \"{numPizze}\" pizze, inizio ad impilarle\n", ConsoleColor.Magenta);
 
             for (var i = 1; i < numPizze + 1; i++)
             {
@@ -70,13 +70,46 @@ namespace PizzaGame
                 PilaPizze.Push(txt);
             }
 
-            Console.WriteLine($"Pizze impilate con successo\nI GIOCATORI POSSONO COMINCIARE A GIOCARE\n\n");
+            Utility.ConsoleColorText($"Pizze impilate con successo\nI GIOCATORI POSSONO COMINCIARE A GIOCARE\n\n", ConsoleColor.Cyan);
         }
 
         public static void GetPizze(Stack<string> pizze)
         {
             foreach(var pizza in pizze)
-                Console.WriteLine(pizza);
+                Utility.ConsoleColorText(pizza, ConsoleColor.DarkYellow);
         }
+
+        #region Colore testo console
+        public static void ConsoleColorText(string txt, ConsoleColor color)
+        {
+            switch (color)
+            {
+                case ConsoleColor.DarkYellow: ConsoleColorTextYellow(txt); break;
+                case ConsoleColor.Green: ConsoleColorTextGreen(txt); break;
+                case ConsoleColor.Cyan: ConsoleColorTextCyan(txt); break;
+                case ConsoleColor.Magenta: ConsoleColorTextMagenta(txt); break;
+            }
+        }
+
+        public static void ConsoleColorTextYellow(string txt)
+        {
+            CConsole.WriteLine($"{txt:DarkYellow}");
+        }
+
+        public static void ConsoleColorTextGreen(string txt)
+        {
+            CConsole.WriteLine($"{txt:Green}");
+        }
+
+        public static void ConsoleColorTextCyan(string txt)
+        {
+            CConsole.WriteLine($"{txt:Cyan}");
+        }
+
+        public static void ConsoleColorTextMagenta(string txt)
+        {
+            CConsole.WriteLine($"{txt:Magenta}");
+        }
+        #endregion
     }
 }

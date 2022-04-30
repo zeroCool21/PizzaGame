@@ -26,7 +26,7 @@ namespace PizzaGame
             // caso in cui il numero di pizze da mangiare del player giocante risultano uguali a quelli mangiati dall'avversario
             var str = (ritenta ? "Ritenta, non puoi mangiare lo stesso numero di pizze appena mangiate dall'avversario: " : "") + $"{NomePlayer} mangierà \"{numPizze}\" pizze";
 
-            Console.WriteLine(str);
+            Utility.ConsoleColorText(str, ConsoleColor.Cyan);
             PizzeMangiateNellaMano = numPizze;
         }
     

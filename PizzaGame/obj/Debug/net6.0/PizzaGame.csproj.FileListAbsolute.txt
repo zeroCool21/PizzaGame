@@ -12,3 +12,4 @@ C:\Users\gianlucagrasso\Source\Repos\zeroCool21\PizzaGame\PizzaGame\obj\Debug\ne
 C:\Users\gianlucagrasso\Source\Repos\zeroCool21\PizzaGame\PizzaGame\obj\Debug\net6.0\ref\PizzaGame.dll
 C:\Users\gianlucagrasso\Source\Repos\zeroCool21\PizzaGame\PizzaGame\obj\Debug\net6.0\PizzaGame.pdb
 C:\Users\gianlucagrasso\Source\Repos\zeroCool21\PizzaGame\PizzaGame\obj\Debug\net6.0\PizzaGame.genruntimeconfig.cache
+C:\Users\gianlucagrasso\Source\Repos\zeroCool21\PizzaGame\PizzaGame\obj\Debug\net6.0\PizzaGame.csproj.AssemblyReference.cache

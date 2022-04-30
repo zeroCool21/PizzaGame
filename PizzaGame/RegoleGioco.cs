@@ -71,25 +71,21 @@ namespace PizzaGame
             // caso 1
             if (playerGiocante.PizzeMangiateNellaMano > pilaPizze.Count && playerGiocante.PizzeMangiateNellaMano != playerAvversario.PizzeMangiateNellaMano)
             {
-                Console.WriteLine($"{playerGiocante.NomePlayer} salta il turno e perde");
-                Console.WriteLine($"Complimenti {playerAvversario.NomePlayer}, hai vinto!!");
-
+                Utility.ConsoleColorText($"{playerGiocante.NomePlayer} salta il turno e perde\nComplimenti {playerAvversario.NomePlayer}, hai vinto!!", ConsoleColor.Green);
                 return Utility.OperazioniGioco.VittoriaAvversario;
             }
 
             // caso 2
             if (playerGiocante.PizzeMangiateNellaMano > pilaPizze.Count && playerGiocante.PizzeMangiateNellaMano == playerAvversario.PizzeMangiateNellaMano)
             {                
-                Console.WriteLine($"Rigioca, pizze da mangiare uguali a quelli mangiati dell'avversario!!");
-
+                Utility.ConsoleColorText($"Rigioca, pizze da mangiare uguali a quelli mangiati dell'avversario!!", ConsoleColor.Green);
                 return Utility.OperazioniGioco.Rigioca;
             }
 
             // caso 3
             if (playerGiocante.PizzeMangiateNellaMano == pilaPizze.Count && playerGiocante.PizzeMangiateNellaMano != playerAvversario.PizzeMangiateNellaMano)
             {
-                Console.WriteLine($"{playerGiocante.NomePlayer} ha mangiato la pizza avvelenata e perde, {playerAvversario.NomePlayer} ha vinto, Complimenti!!");
-
+                Utility.ConsoleColorText($"{playerGiocante.NomePlayer} ha mangiato la pizza avvelenata e perde, {playerAvversario.NomePlayer} ha vinto, Complimenti!!", ConsoleColor.Green);
                 return Utility.OperazioniGioco.PizzaAvvelenataMangiata;
             }
 
