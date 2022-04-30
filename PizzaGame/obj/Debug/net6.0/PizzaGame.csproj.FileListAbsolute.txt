@@ -1,0 +1,14 @@
+C:\Users\gianlucagrasso\Source\Repos\zeroCool21\PizzaGame\PizzaGame\bin\Debug\net6.0\PizzaGame.exe
+C:\Users\gianlucagrasso\Source\Repos\zeroCool21\PizzaGame\PizzaGame\bin\Debug\net6.0\PizzaGame.deps.json
+C:\Users\gianlucagrasso\Source\Repos\zeroCool21\PizzaGame\PizzaGame\bin\Debug\net6.0\PizzaGame.runtimeconfig.json
+C:\Users\gianlucagrasso\Source\Repos\zeroCool21\PizzaGame\PizzaGame\bin\Debug\net6.0\PizzaGame.dll
+C:\Users\gianlucagrasso\Source\Repos\zeroCool21\PizzaGame\PizzaGame\bin\Debug\net6.0\ref\PizzaGame.dll
+C:\Users\gianlucagrasso\Source\Repos\zeroCool21\PizzaGame\PizzaGame\bin\Debug\net6.0\PizzaGame.pdb
+C:\Users\gianlucagrasso\Source\Repos\zeroCool21\PizzaGame\PizzaGame\obj\Debug\net6.0\PizzaGame.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\gianlucagrasso\Source\Repos\zeroCool21\PizzaGame\PizzaGame\obj\Debug\net6.0\PizzaGame.AssemblyInfoInputs.cache
+C:\Users\gianlucagrasso\Source\Repos\zeroCool21\PizzaGame\PizzaGame\obj\Debug\net6.0\PizzaGame.AssemblyInfo.cs
+C:\Users\gianlucagrasso\Source\Repos\zeroCool21\PizzaGame\PizzaGame\obj\Debug\net6.0\PizzaGame.csproj.CoreCompileInputs.cache
+C:\Users\gianlucagrasso\Source\Repos\zeroCool21\PizzaGame\PizzaGame\obj\Debug\net6.0\PizzaGame.dll
+C:\Users\gianlucagrasso\Source\Repos\zeroCool21\PizzaGame\PizzaGame\obj\Debug\net6.0\ref\PizzaGame.dll
+C:\Users\gianlucagrasso\Source\Repos\zeroCool21\PizzaGame\PizzaGame\obj\Debug\net6.0\PizzaGame.pdb
+C:\Users\gianlucagrasso\Source\Repos\zeroCool21\PizzaGame\PizzaGame\obj\Debug\net6.0\PizzaGame.genruntimeconfig.cache
